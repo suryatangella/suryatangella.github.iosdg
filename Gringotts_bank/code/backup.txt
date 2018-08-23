@@ -1,0 +1,56 @@
+<table id="sidebarnav" style="text-align:left;" ng-show="user">
+                        <tr>
+                            <td ng-if="user.cin">
+                                <b>Customer ID:</b>
+                            </td>
+                            <td>{{user.cin}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.name">
+                                <b>Name:</b>
+                            </td>
+                            <td>{{user.name}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.customerType">
+                                <b>Customer Type:</b>
+                            </td>
+                            <td>{{user.customerType}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.address">
+                                <b>Address:</b>
+                            </td>
+                            <td>{{user.address}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.residenceCountry">
+                                <b>Country of Residence:</b>
+                            </td>
+                            <td>{{user.residenceCountry}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.incorporationCountry">
+                                <b>Country of Incorporation:</b>
+                            </td>
+                            <td>{{user.incorporationCountry}}</td>
+                        </tr>
+                        <tr>
+                            <td ng-if="user.industryClassification">
+                                <b>Industry Classification:
+                                    <b>
+                            </td>
+                            <td>{{user.industryClassification}}</td>
+                        </tr>
+                    </table>
+
+                    <ul id="sidebarnav" style="text-align:center;" ng-show="user">
+
+                            <li ng-if="user.cin"><b>Customer ID:</b>{{user.cin}}</li>
+                            <li ng-if="user.name"><b>Name:</b>{{user.name}}</li>
+                            <li ng-if="user.customerType"><b>Customer Type:</b>{{user.customerType}}</li>
+                            <li ng-if="user.address"><b>Address:</b>{{user.address}}</li>
+                            <li ng-if="user.residenceCountry"><b>Country of Residence:</b>{{user.residenceCountry}}</li>
+                            <li ng-if="user.incorporationCountry"><b>Country of Incorporation:</b>{{user.incorporationCountry}}</li>
+                            <li ng-if="user.industryClassification"><b>Industry Classification:</b>{{user.industryClassification}}</li>
+                    </ul>
